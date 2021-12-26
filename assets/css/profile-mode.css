@@ -22,10 +22,17 @@
     font-size: 18px
 }
 
+.profile .profile_image_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .profile img {
-    display: inline-table;
-    border-radius: 50%;
-    pointer-events: none
+    /*display: inline-table;*/
+    border-radius: 2%;
+    pointer-events: none;
+    aspect-ratio: inherit;
+    height: auto;
 }
 
 @media screen and (max-width:600px) {
