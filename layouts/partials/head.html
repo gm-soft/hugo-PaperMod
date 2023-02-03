@@ -153,14 +153,14 @@
 {{- /* Misc */}}
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.newGoogleAnalytics }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', '{{ .Site.Params.googleAnalytics }}');
+  gtag('config', '{{ .Site.Params.newGoogleAnalytics }}');
 </script>
+{{- template "_internal/google_analytics.html" . }}
 {{- template "partials/templates/opengraph.html" . }}
 {{- template "partials/templates/twitter_cards.html" . }}
 {{- template "partials/templates/schema_json.html" . }}
