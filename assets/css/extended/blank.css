@@ -22,3 +22,9 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     font-style: oblique;
     font-size: 1.4rem;
 }
+
+blockquote {
+    color: #5F5F5F;
+    border-inline-start-color: #5F5F5F !important;
+    font-size: 1.2rem !important;
+}
